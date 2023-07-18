@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+<style>
+    body{
+      background-color: gray;
+    }
+    #container{
+      background-color:white;
+      width: 350px;
+      height: auto;
+      margin: 150px auto;
+      border-radius: 20px;
+    }
+    .innerDiv{
+        padding: 30px;
+    }
+    .innerDiv h1{
+      font-family:sans-serif;
+      font-weight: bolder;
+    }
+    .innerDiv img{
+        width: 35px;
+    }
+    .content{
+        font-size: 14px;
+        padding-bottom: 18px;
+    }
+    button{
+      font-weight: bold;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+    .anchor{
+      color: white;
+      text-decoration: none;
+    }
+    @media only screen and (max-width:750px){
+      body{
+        background-color:white;
+        padding: 0;
+        margin: 0;
+      }
+      #container{
+        width: inherit;
+        border-radius: 0%;
+        margin:0;
+      }
+      .innerDiv{
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    
+      .content{
+        padding-bottom: 90%;
+    }
+    }
+</style>
+</head>
+<body>
+<!-- Success message start -->
+
+<div id="container">
+    <div class="innerDiv">
+        <img src="assets/images/icon-success.svg">
+        <h1>Thanks for subscribing!</h1>
+        <div class="content">
+            A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> 
+            Please open it and click the button inside to confirm your subscription.
+        </div>
+        <button><a class="anchor" href="index.html">Dismiss message</button></a></button>
+    </div>
+</div> 
+
+<!-- Success message end -->
+</body>
+</html>
